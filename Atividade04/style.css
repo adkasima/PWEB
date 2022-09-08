@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --header-color: #110920;
+    --main-color: #6a49ac;
+    --secondary-color: #03c1ef;
+
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: white;
+
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+ .menu{
+    z-index: 1;
+    background-color: var(--header-color);
+    padding: 3.2rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    gap: 3.2rem;
+
+    -webkit-box-shadow: 0px 2px 50px 24px rgba(3,193,239,0.52); 
+box-shadow: 0px 2px 50px 24px rgba(3,193,239,0.52);
+}
+
+.menu img {
+    width: 24px;
+}
+
+.menu ul {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.menu ul li a {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+
+    transition: 200ms;
+}
+
+.menu ul li a:hover {
+    transform: scale(1.1);
+  
+}
+
+.banner img{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid black;
+    
+}
+
+.banner h1 {
+    width: 60rem;
+    color: white;
+    font-size: 4.8rem;
+    position: absolute;
+    
+    top: 40%;
+    left: 35%;
+}
+
+.banner h1 span {
+    color: var(--secondary-color)
+}
+
+main {
+    padding: 4.8rem;
+    width: 180vh;
+    height: 100%;
+}
+
+.section-header {
+    margin-top: 6rem;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.205);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-header button {
+    align-items: center;
+    display: flex;
+    gap: 2.4rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: 200ms;
+}
+
+.section-header button:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
+}
+
+.section-header button img{
+    width: 3rem;
+}
+
+.section-header button a{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.box-content{
+    margin-top: 5.2rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.card {
+    text-align: center;
+    padding: 1.6rem;
+    position: relative;
+    max-width: 30rem;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.card button {
+    align-items: center;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    cursor: pointer;
+}
+
+.card button:hover {
+    filter: brightness(1.2);
+}
+
+.card button img {
+    width: 14px;
+}
+
+.card button a {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.card h3 {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    color: white;
+}
