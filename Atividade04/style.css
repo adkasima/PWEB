@@ -181,6 +181,19 @@ main {
     color: white;
 }
 
+#footer {
+    
+    height: 15rem;
+    background-color: var(--header-color);
+}
+
+#footer p {
+    padding-top: 7rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--secondary-color)
+}
+
 
 @media (max-width: 750px) {
     nav ul {
